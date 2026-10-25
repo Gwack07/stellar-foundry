@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:netherracks"
+    },
+    "I": {
+      "tag": "c:plates/iron"
+    },
+    "K": {
+      "item": "kubejs:kinetic_science_pack"
+    }
+  },
+  "pattern": [
+    "KIK",
+    "IAI",
+    "KIK"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:empty_blaze_burner"
+  }
+}

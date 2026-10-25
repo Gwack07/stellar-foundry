@@ -1,0 +1,22 @@
+{
+  "item.kubejs.kinetic_science_pack": "Kinetic Science Pack",
+  "item.kubejs.incomplete_kinetic_science_pack": "Incomplete Kinetic Science Pack",
+  "item.kubejs.logistic_science_pack": "Logistic Science Pack",
+  "item.kubejs.incomplete_logistic_science_pack": "Incomplete Logistic Science Pack",
+  "item.kubejs.chemical_science_pack": "Chemical Science Pack",
+  "item.kubejs.incomplete_chemical_science_pack": "Incomplete Chemical Science Pack",
+  "item.kubejs.aeronautical_science_pack": "Aeronautical Science Pack",
+  "item.kubejs.incomplete_aeronautical_science_pack": "Incomplete Aeronautical Science Pack",
+  "item.kubejs.industrial_science_pack": "Industrial Science Pack",
+  "item.kubejs.incomplete_industrial_science_pack": "Incomplete Industrial Science Pack",
+  "item.kubejs.lunar_science_pack": "Lunar Science Pack",
+  "item.kubejs.incomplete_lunar_science_pack": "Incomplete Lunar Science Pack",
+  "item.kubejs.martian_science_pack": "Martian Science Pack",
+  "item.kubejs.incomplete_martian_science_pack": "Incomplete Martian Science Pack",
+  "item.kubejs.venusian_science_pack": "Venusian Science Pack",
+  "item.kubejs.incomplete_venusian_science_pack": "Incomplete Venusian Science Pack",
+  "item.kubejs.mercurian_science_pack": "Mercurian Science Pack",
+  "item.kubejs.incomplete_mercurian_science_pack": "Incomplete Mercurian Science Pack",
+  "item.kubejs.vacuum_crystal": "Vacuum Crystal",
+  "item.kubejs.warp_drive_core": "Warp Drive Core"
+}

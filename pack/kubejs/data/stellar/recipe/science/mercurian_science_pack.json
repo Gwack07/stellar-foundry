@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "northstar:tungsten_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:mercurian_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mercurian_science_pack"
+        },
+        {
+          "item": "northstar:mercury_shelf_fungus"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_mercurian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mercurian_science_pack"
+        },
+        {
+          "item": "northstar:mercury_stone"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_mercurian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mercurian_science_pack"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 250,
+          "fluid": "minecraft:water"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_mercurian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mercurian_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_mercurian_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_mercurian_science_pack"
+  }
+}

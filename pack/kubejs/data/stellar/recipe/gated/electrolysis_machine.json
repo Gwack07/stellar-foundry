@@ -1,0 +1,42 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "northstar:amethyst_crystal"
+    },
+    "C": {
+      "item": "northstar:circuit"
+    },
+    "T": {
+      "tag": "c:plates/martian_steel"
+    },
+    "F": {
+      "tag": "c:ingots/martian_steel"
+    },
+    "P": {
+      "item": "create:fluid_pipe"
+    },
+    "L": {
+      "item": "create:fluid_tank"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "M": {
+      "item": "kubejs:martian_science_pack"
+    }
+  },
+  "pattern": [
+    "MTPTM",
+    "TCPCT",
+    "PPLPP",
+    "TCACT",
+    "FFSFF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "northstar:electrolysis_machine"
+  },
+  "accept_mirrored": false
+}

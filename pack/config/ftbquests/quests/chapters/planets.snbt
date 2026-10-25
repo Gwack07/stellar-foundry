@@ -1,0 +1,578 @@
+{
+	id: "998CA10A99E36D88"
+	group: ""
+	order_index: 4
+	filename: "planets"
+	title: "5. The Inner Planets"
+	subtitle: [
+		"Three worlds, any order - each teaches a new industry"
+	]
+	icon: {
+		id: "northstar:martian_steel"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "CF43435C5762058D"
+			title: "Pick a Planet"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Each planet has a unique science pack and unlocks a different machine:"
+				"&6Mars&r: thin air, dust storms, martian steel, &6Electrolysis Machine&r (hydrogen, oxygen, better titanium)."
+				"&6Venus&r: crushing heat, acid rain, thick air, &6Combustion Engine&r (serious power)."
+				"&6Mercury&r: tungsten, blazing sun, &6Solar Panel&r."
+				""
+				"The Warp Drive Core needs science from &eany two&r of them."
+			]
+			dependencies: [
+				"D191D9C1046CFAFF"
+			]
+			tasks: [
+				{
+					id: "F46C226FF646DFD8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B80660A71E34A67C"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "58ACE83F22DDCE6D"
+			title: "Red Planet"
+			x: 4.0d
+			y: -7.0d
+			description: [
+				"Land on Mars. The air is under 1% of Earth's: propellers barely work, so lean on levitite or rockets."
+			]
+			dependencies: [
+				"CF43435C5762058D"
+			]
+			tasks: [
+				{
+					id: "CFC1FF8A08B53BB0"
+					type: "dimension"
+					dimension: "northstar:mars"
+				}
+			]
+			rewards: [
+				{
+					id: "538B45D1C47CDE5D"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			id: "646E4E8216B7D826"
+			title: "Martian Steel"
+			x: 8.0d
+			y: -7.0d
+			description: [
+				"Compact titanium, raw martian iron and volcanic ash (heated)."
+			]
+			dependencies: [
+				"58ACE83F22DDCE6D"
+			]
+			tasks: [
+				{
+					id: "96645BFCD17A76BD"
+					type: "item"
+					item: {
+						id: "northstar:martian_steel"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "11A8966A11A1001E"
+					type: "item"
+					item: {
+						id: "northstar:martian_steel_sheet"
+						count: 1
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "3483719E431C3CE1"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "9BE773C377108605"
+			title: "Martian Science"
+			x: 12.0d
+			y: -7.0d
+			description: [
+				"Sequenced assembly on a martian steel sheet: volcanic ash, raw martian iron, mars sand, press."
+			]
+			dependencies: [
+				"646E4E8216B7D826"
+			]
+			tasks: [
+				{
+					id: "1444DB4EA1C8BE53"
+					type: "item"
+					item: {
+						id: "kubejs:martian_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "740E23CDB4AE6BA6"
+					type: "xp"
+					xp: 400
+				}
+			]
+		}
+		{
+			id: "4E66E1C190ABF85D"
+			title: "Martian Industry"
+			x: 16.0d
+			y: -7.0d
+			description: [
+				"Unlocks the Electrolysis Machine."
+			]
+			dependencies: [
+				"9BE773C377108605"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "1626D1064A29DE4D"
+					type: "item"
+					item: {
+						id: "kubejs:martian_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "65F1C3E8BA27B78A"
+					type: "xp"
+					xp: 600
+				}
+			]
+		}
+		{
+			id: "2D582F960DF441EE"
+			title: "Splitting Water"
+			x: 20.0d
+			y: -7.0d
+			description: [
+				"Water becomes oxygen and hydrogen, and brine becomes chlorine and sodium. Hydrogen is rocket fuel too."
+			]
+			dependencies: [
+				"4E66E1C190ABF85D"
+			]
+			tasks: [
+				{
+					id: "544B224F626F59E0"
+					type: "item"
+					item: {
+						id: "northstar:electrolysis_machine"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "E0DBF626A40E59CD"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "30A2DEDEF8407683"
+			title: "Heat-Proof"
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"Venus is hot enough to cook you. Wear a full set of Create's netherite diving gear (Nether materials)."
+			]
+			dependencies: [
+				"CF43435C5762058D"
+			]
+			tasks: [
+				{
+					id: "C578606A748A58C7"
+					type: "item"
+					item: {
+						id: "create:netherite_diving_helmet"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "15319D1416FA656F"
+					type: "item"
+					item: {
+						id: "create:netherite_backtank"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "123474DD69883008"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "195D2C8EAD92CF40"
+					type: "item"
+					item: {
+						id: "create:netherite_diving_boots"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "EC0DF8ED503ABBD9"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "B987E75E0A290796"
+			title: "Hell on a Planet"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"Land on Venus. The atmosphere is 92 times Earth's, thick as soup. Balloons float easily, but expect heavy drag."
+			]
+			dependencies: [
+				"30A2DEDEF8407683"
+			]
+			tasks: [
+				{
+					id: "DE81DDE36CAD4A1A"
+					type: "dimension"
+					dimension: "northstar:venus"
+				}
+			]
+			rewards: [
+				{
+					id: "F6B39FCA65750991"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			id: "9DCC8DB62188D24E"
+			title: "Sulfuric Acid"
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"Venus has sulfuric acid lakes. Pump some home. Also crush venus gravel: it's the richest rutile source in the system."
+			]
+			dependencies: [
+				"B987E75E0A290796"
+			]
+			tasks: [
+				{
+					id: "B203B87ABC830656"
+					type: "item"
+					item: {
+						id: "northstar:calorian_log"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "54DEBC92FC4CE6F3"
+					type: "item"
+					item: {
+						id: "northstar:venus_stone"
+						count: 1
+					}
+					count: 32L
+				}
+			]
+			rewards: [
+				{
+					id: "F56653FE1ACE882F"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "64195C34BA17DD5B"
+			title: "Venusian Science"
+			x: 16.0d
+			y: 0.0d
+			description: [
+				"Sequenced assembly on a titanium sheet: 250 mB sulfuric acid, calorian log, venus stone, press."
+			]
+			dependencies: [
+				"9DCC8DB62188D24E"
+			]
+			tasks: [
+				{
+					id: "352F9B7D6581C15A"
+					type: "item"
+					item: {
+						id: "kubejs:venusian_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "BB0F082D0B15F685"
+					type: "xp"
+					xp: 400
+				}
+			]
+		}
+		{
+			id: "54C43AA503B426DA"
+			title: "Venusian Industry"
+			x: 20.0d
+			y: 0.0d
+			description: [
+				"Unlocks the Combustion Engine."
+			]
+			dependencies: [
+				"64195C34BA17DD5B"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "E7F927232C3D801E"
+					type: "item"
+					item: {
+						id: "kubejs:venusian_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "5BB7E47568BF3DC7"
+					type: "xp"
+					xp: 600
+				}
+			]
+		}
+		{
+			id: "67CB5F388BF0D45C"
+			title: "Combustion Power"
+			x: 24.0d
+			y: 0.0d
+			description: [
+				"Burns rocket fuels for huge rotational power. Methane and liquid hydrogen burn best."
+			]
+			dependencies: [
+				"54C43AA503B426DA"
+			]
+			tasks: [
+				{
+					id: "AFB36ADB37780683"
+					type: "item"
+					item: {
+						id: "northstar:combustion_engine"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "C326CB63D9F9D05C"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "6D0D042662E4F7D2"
+			title: "Closest to the Sun"
+			x: 4.0d
+			y: 7.0d
+			description: [
+				"Land on Mercury. No air at all, and harsh sun."
+			]
+			dependencies: [
+				"CF43435C5762058D"
+			]
+			tasks: [
+				{
+					id: "382F187E7B9FB752"
+					type: "dimension"
+					dimension: "northstar:mercury"
+				}
+			]
+			rewards: [
+				{
+					id: "C792C11EC4964214"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			id: "73BD8FC49F2CE910"
+			title: "Tungsten"
+			x: 8.0d
+			y: 7.0d
+			description: [
+				"Tungsten ore is only found on Mercury. Smelt it and press it into sheets."
+			]
+			dependencies: [
+				"6D0D042662E4F7D2"
+			]
+			tasks: [
+				{
+					id: "BC45E1CDEB3453D3"
+					type: "item"
+					item: {
+						id: "northstar:raw_tungsten_ore"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "994D8A01FA096A91"
+					type: "item"
+					item: {
+						id: "northstar:tungsten_sheet"
+						count: 1
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "82695DAE60524CAF"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "6D37CA148F1BDE33"
+			title: "Mercurian Science"
+			x: 12.0d
+			y: 7.0d
+			description: [
+				"Sequenced assembly on a tungsten sheet: shelf fungus, mercury stone, 250 mB water, press."
+			]
+			dependencies: [
+				"73BD8FC49F2CE910"
+			]
+			tasks: [
+				{
+					id: "3D2571009B5A1370"
+					type: "item"
+					item: {
+						id: "kubejs:mercurian_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "44E249F4FCA35748"
+					type: "xp"
+					xp: 400
+				}
+			]
+		}
+		{
+			id: "D24BC8E6F283FFA9"
+			title: "Mercurian Industry"
+			x: 16.0d
+			y: 7.0d
+			description: [
+				"Unlocks the Solar Panel."
+			]
+			dependencies: [
+				"6D37CA148F1BDE33"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "5CEB19634856F9DF"
+					type: "item"
+					item: {
+						id: "kubejs:mercurian_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "10BABE7DE85198C4"
+					type: "xp"
+					xp: 600
+				}
+			]
+		}
+		{
+			id: "8E4C367FD3C53AC0"
+			title: "Solar Farm"
+			x: 20.0d
+			y: 7.0d
+			description: [
+				"Free power wherever there's sun. Great for stations and outposts."
+			]
+			dependencies: [
+				"D24BC8E6F283FFA9"
+			]
+			tasks: [
+				{
+					id: "93FA790CB7C3728D"
+					type: "item"
+					item: {
+						id: "northstar:solar_panel"
+						count: 1
+					}
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "C180BAE2C4F2D3D1"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [ ]
+}

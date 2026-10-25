@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "northstar:martian_steel_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:martian_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_martian_science_pack"
+        },
+        {
+          "item": "northstar:volcanic_ash_item"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_martian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_martian_science_pack"
+        },
+        {
+          "item": "northstar:raw_martian_iron_ore"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_martian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_martian_science_pack"
+        },
+        {
+          "item": "northstar:mars_sand"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_martian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_martian_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_martian_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_martian_science_pack"
+  }
+}

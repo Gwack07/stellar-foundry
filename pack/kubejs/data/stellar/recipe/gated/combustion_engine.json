@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "T": {
+      "tag": "c:plates/titanium"
+    },
+    "C": {
+      "item": "northstar:rocket_combustion_chamber"
+    },
+    "A": {
+      "item": "create:industrial_iron_block"
+    },
+    "V": {
+      "item": "kubejs:venusian_science_pack"
+    }
+  },
+  "pattern": [
+    "PTP",
+    "TCT",
+    "AVA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "northstar:combustion_engine"
+  }
+}

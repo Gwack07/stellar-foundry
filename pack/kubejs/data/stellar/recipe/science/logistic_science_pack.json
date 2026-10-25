@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/gold"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:logistic_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_logistic_science_pack"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_logistic_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_logistic_science_pack"
+        },
+        {
+          "item": "create:belt_connector"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_logistic_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_logistic_science_pack"
+        },
+        {
+          "tag": "c:ingots/brass"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_logistic_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_logistic_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_logistic_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_logistic_science_pack"
+  }
+}

@@ -1,0 +1,305 @@
+{
+	id: "823951DCBB7040D4"
+	group: ""
+	order_index: 0
+	filename: "spin_up"
+	title: "1. Spin Up"
+	subtitle: [
+		"Create basics and your first science"
+	]
+	icon: {
+		id: "create:cogwheel"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "632C27362F007644"
+			title: "Welcome to Stellar Foundry"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Goal: build the &6Warp Drive Core&r."
+				""
+				"Progress runs on &dscience packs&r, made on Create assembly lines. Packs go into the machines that unlock the next step."
+				""
+				"The tech tree &obranches&r. On Earth, pick any two of four specialisations to reach space. Out in the solar system, visit the planets in any order, and any two will do for the endgame."
+				""
+				"&cWatch your pollution.&r Furnaces, blaze burners and engines pollute the air around them, and enough pollution draws attacks on your factory. Wear Engineer's Goggles and sneak to check the local level."
+				"Hand-crafting gets you started. Automation gets you to the stars."
+			]
+			tasks: [
+				{
+					id: "EA53CDEFC101C8E1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1A1D223E60D31B39"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			id: "6B3D7A55F791612C"
+			title: "Andesite Age"
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"Mix andesite with iron nuggets. Andesite alloy is the backbone of early Create."
+			]
+			dependencies: [
+				"632C27362F007644"
+			]
+			tasks: [
+				{
+					id: "AFD8736E881CE4A8"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "D8ACCED7427B0ABF"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "74B13E1C9AF1127D"
+			title: "Free Rotation"
+			x: 8.0d
+			y: -3.0d
+			description: [
+				"Water wheels and windmills give rotational power. Stress (SU) is your first power grid."
+			]
+			dependencies: [
+				"6B3D7A55F791612C"
+			]
+			tasks: [
+				{
+					id: "B5B6730A56474795"
+					type: "item"
+					item: {
+						id: "create:water_wheel"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "6519B1F4ED807E91"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "505478283FB7917F"
+			title: "Pressing Matters"
+			x: 8.0d
+			y: 3.0d
+			description: [
+				"The Mechanical Press flattens ingots into plates."
+			]
+			dependencies: [
+				"6B3D7A55F791612C"
+			]
+			tasks: [
+				{
+					id: "C499E8B6D24BE984"
+					type: "item"
+					item: {
+						id: "create:mechanical_press"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "F76F35EA90B06883"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "7EF187A55294AD8C"
+			title: "Main Bus"
+			x: 12.0d
+			y: -3.0d
+			description: [
+				"Belts carry items between machines. In Factorio terms, this is your main bus."
+			]
+			dependencies: [
+				"74B13E1C9AF1127D"
+			]
+			tasks: [
+				{
+					id: "85D3F95858CF7CA0"
+					type: "item"
+					item: {
+						id: "create:belt_connector"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "ECC9AED74035B8AB"
+					type: "item"
+					item: {
+						id: "create:andesite_casing"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "E6DBFF1F58188658"
+			title: "Assembly Line"
+			x: 12.0d
+			y: 3.0d
+			description: [
+				"A Spout and a Mechanical Saw over a belt, plus your press. Together they run &dsequenced assembly&r."
+			]
+			dependencies: [
+				"505478283FB7917F"
+			]
+			tasks: [
+				{
+					id: "A936BA7A49351E2C"
+					type: "item"
+					item: {
+						id: "create:spout"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "C7B2B5576C32A5E0"
+					type: "item"
+					item: {
+						id: "create:mechanical_saw"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "E98E4594B7CE1EE9"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "81F3CAD8FC373E2D"
+			title: "Kinetic Science"
+			x: 16.0d
+			y: 0.0d
+			description: [
+				"Sequenced assembly on an iron plate: spout 100 mB water, saw, press. Check JEI for the details."
+			]
+			dependencies: [
+				"7EF187A55294AD8C"
+				"E6DBFF1F58188658"
+			]
+			tasks: [
+				{
+					id: "5FA46395920860F4"
+					type: "item"
+					item: {
+						id: "kubejs:kinetic_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "14D4677BE6BC4A09"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			id: "D1E1878BEDD6D4D0"
+			title: "Automate It"
+			x: 20.0d
+			y: 0.0d
+			description: [
+				"Make packs without touching the line. Kinetic packs unlock the &6Blaze Burner&r, which means brass, heat and everything after it."
+			]
+			dependencies: [
+				"81F3CAD8FC373E2D"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "5A683FF90E831355"
+					type: "item"
+					item: {
+						id: "kubejs:kinetic_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "12061D20031F06C8"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			id: "30C8CA24F7A65661"
+			title: "Bottled Fire"
+			x: 24.0d
+			y: 0.0d
+			description: [
+				"Catch a blaze. Heated mixing opens up brass and chemistry."
+			]
+			dependencies: [
+				"D1E1878BEDD6D4D0"
+			]
+			tasks: [
+				{
+					id: "12EC0DF7BC6F2BCA"
+					type: "item"
+					item: {
+						id: "create:empty_blaze_burner"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "2961E9E3BDDC8AA2"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [ ]
+}

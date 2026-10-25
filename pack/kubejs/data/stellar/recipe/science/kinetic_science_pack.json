@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/iron"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:kinetic_science_pack"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_kinetic_science_pack"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 100,
+          "fluid": "minecraft:water"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_kinetic_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_kinetic_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_kinetic_science_pack"
+        }
+      ],
+      "processing_time": 50
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_kinetic_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_kinetic_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_kinetic_science_pack"
+  }
+}

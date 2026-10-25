@@ -1,0 +1,7 @@
+.cache/
+__pycache__/
+*.pyc
+mods-src/*/build/
+mods-src/*/.gradle/
+mods-src/*/run/
+.DS_Store

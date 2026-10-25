@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "northstar:polished_lunar_sapphire"
+    },
+    "C": {
+      "item": "northstar:circuit"
+    },
+    "S": {
+      "tag": "c:plates/titanium"
+    },
+    "T": {
+      "tag": "c:ingots/titanium"
+    },
+    "#": {
+      "item": "northstar:targeting_computer"
+    },
+    "N": {
+      "item": "kubejs:lunar_science_pack"
+    }
+  },
+  "pattern": [
+    "SLS",
+    "CLC",
+    "SNS",
+    "CLC",
+    "SLS",
+    "T#T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "northstar:interplanetary_navigator"
+  },
+  "accept_mirrored": false
+}

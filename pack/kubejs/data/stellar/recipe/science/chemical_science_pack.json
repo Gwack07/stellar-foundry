@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "northstar:titanium_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:chemical_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_chemical_science_pack"
+        },
+        {
+          "type": "neoforge:tag",
+          "amount": 250,
+          "tag": "c:carbon"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_chemical_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_chemical_science_pack"
+        },
+        {
+          "item": "northstar:salt"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_chemical_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_chemical_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_chemical_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_chemical_science_pack"
+  }
+}

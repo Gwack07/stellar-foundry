@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:tinted_glass"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "T": {
+      "tag": "c:plates/titanium"
+    },
+    "C": {
+      "item": "northstar:circuit"
+    },
+    "M": {
+      "item": "kubejs:mercurian_science_pack"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GGG",
+    "MSM",
+    "TCT",
+    "TST"
+  ],
+  "result": {
+    "count": 1,
+    "id": "northstar:solar_panel"
+  },
+  "accept_mirrored": false
+}

@@ -1,0 +1,39 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "K": {
+      "item": "kubejs:kinetic_science_pack"
+    },
+    "E": {
+      "tag": "stellar:earth_branch_packs"
+    },
+    "N": {
+      "item": "kubejs:lunar_science_pack"
+    },
+    "A": {
+      "item": "kubejs:martian_science_pack"
+    },
+    "B": {
+      "item": "kubejs:mercurian_science_pack"
+    },
+    "T": {
+      "item": "northstar:titanium_block"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    " KEK ",
+    "ETNTE",
+    "ATSTB",
+    "ETNTE",
+    " KEK "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kubejs:warp_drive_core"
+  },
+  "accept_mirrored": false
+}

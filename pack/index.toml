@@ -1,0 +1,400 @@
+hash-format = "sha256"
+
+[[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "81c3032176fa0862b95528bb7b86e7a9b672974039ca10e93dab76e9dd6929ef"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/branches.snbt"
+hash = "2ba0e8be275ee074ac2ad1cdfbd6ade7c2e95fad13fd44990b8cc7945dbd863a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/endgame.snbt"
+hash = "48a8256e2ab524116dbd7b15e91ca450d1b5fc74eceab6610395bbf6bf12d1ed"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/moon.snbt"
+hash = "49b505424396a969a011a43b070823b1dca436314d9cb4c277fbcb1447f97c43"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/orbit.snbt"
+hash = "a7a7db6b18f85e093d0837c26d31938a511a9e5255af0d33a8ecd57732c0f23c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/planets.snbt"
+hash = "b4716331f288c8eac747232cca3716b92acff9323187b2e462c622d1c3c7978c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/spin_up.snbt"
+hash = "e040f23ad1138a0744ed0c59a3422c0c0e8b479b86d6b2cfd7dbe7ed88155b27"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "d8e93ce2e3d03ba238276187342392dcdb0de95d347e1cf6d4fbd02fe138b8ff"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/aeronautical_science_pack.png"
+hash = "29a03376fd1e077802d68c4c50e59acffe9f64f481942ef06200ecf20d2b0e23"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/chemical_science_pack.png"
+hash = "43b743e4aff7c2ce57c831fcf58be29247dfec4254fd82cf71e6fbf36ebae48a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_aeronautical_science_pack.png"
+hash = "5c12d2039c0da9d40d158aa329dfd0ced40b3093e5383ff272ae2a890df6e7f2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_chemical_science_pack.png"
+hash = "8e978755d722fca4753b0a36395c0111a2b288922ac6555f6b8f3eb87f147722"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_industrial_science_pack.png"
+hash = "375b49092b207b409a118eec66c5fbef2a457ecd894d3098d001daa8c2f156cd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_kinetic_science_pack.png"
+hash = "b6578f9c7ee2dc45425390e4ed4e6b84985f7a3374906209c78d2c50be809308"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_logistic_science_pack.png"
+hash = "48eae7d7c9e9aef0042496136234c73f01d667cf6ee4e2fe186241e0207f11cd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_lunar_science_pack.png"
+hash = "6e465113e2735ce99727820c2db26db77d0cfec63dcd653e8be30d4d967ca34d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_martian_science_pack.png"
+hash = "fe229415e329393f15f62df9a78626844f4aa76a79b84dcd4521ec261fa257b8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_mercurian_science_pack.png"
+hash = "c986a810c47ef02313e165a9c06e67675efd05c58faa5c2a2be3f400300c695a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/incomplete_venusian_science_pack.png"
+hash = "727fe1114a756ac57af366e51dc92fce3d358a41ae7f2040ae8f80eb74454b4f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/industrial_science_pack.png"
+hash = "31eefa85241c0430dae06fc17538e35125b9c0d3c5a7265085b0e1ca66b3d9c6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kinetic_science_pack.png"
+hash = "56ca8384b5a2bdbbc3ef567c9115ae913a7ba9fb117ea1cb97e16ce2acb576c7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/logistic_science_pack.png"
+hash = "15ccb74fe9b0da27874f1d82eefeac3bf95d45c824551628e519b98ea4446d0a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/lunar_science_pack.png"
+hash = "9b5e611897a37c9258f78a34147498aab70c2e0ef250cbf856e50788287cc2ae"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/martian_science_pack.png"
+hash = "22b66a859a3dbaf689c09991cc944eb99e7a52219e03279f09e6babe4acb534a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mercurian_science_pack.png"
+hash = "25856d7dc4b4d650c5046a628abb087ce2839d7ed4288452d7d514c562ad0018"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/vacuum_crystal.png"
+hash = "a302d279714a01abe23f390ac75d8ebde1d9c9772ca4450e55b4a58c45b8db1d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/venusian_science_pack.png"
+hash = "5535b11ac08f1f4c8539f4f8966b38db828be71982c7e17081b1fc93308b96b7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/warp_drive_core.png"
+hash = "a77bdfb83a1c48bc349f27b27b167e64048107dec1aa62d85c403c8390d5b26b"
+
+[[files]]
+file = "kubejs/client_scripts/tooltips.js"
+hash = "c3e90398ffe7fb3c12ee24883e29a27b8f77a6d63e098e8f8cd26370a05ff10b"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/endgame/warp_drive_core_martian_mercurian.json"
+hash = "63a8b5420c551f6b9c16c1c084c8ccc9f477a72f49075f5df6cbe11cdc3b3480"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/endgame/warp_drive_core_martian_venusian.json"
+hash = "8b288738d947a7bf372d1fca0bfe5a8a3c575c653be5baca4f77a8dd4b396e6a"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/endgame/warp_drive_core_venusian_mercurian.json"
+hash = "146c07014a8d0c6f14e7a1711637e122c0501aa3587a4d32753825c7793fc01f"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/ae2_controller.json"
+hash = "792d5d2142ce0073deadcc82b4555ce83103b8fff1f8b76c4e65d87d21bef8b3"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/astronomy_table_aeronautical_industrial.json"
+hash = "f41a02452e606e12af7f8dbea25883718fd5aa99a70a208ee5abf61083628d8d"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/astronomy_table_chemical_aeronautical.json"
+hash = "8011ad13dad76e00bd64cb827cf206ac62bc2790a997feabf9d5d9282762ae8d"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/astronomy_table_chemical_industrial.json"
+hash = "0ce52b937e5a23d27c733ad42220f34ca43c0c9ecff9d870344da51ababd04ac"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/astronomy_table_logistic_aeronautical.json"
+hash = "ce745d95249c4aca8d27405ee63894bd1e0dee92c9c0197d549b7706b1e0bffb"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/astronomy_table_logistic_chemical.json"
+hash = "1a3f4492a8f06fbb4720666e67ca0e705805905d3e058ea7b072da0f987aeede"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/astronomy_table_logistic_industrial.json"
+hash = "2140bdb503f5d425d138c3ab09d05611e0879144744e45ac0b06873d2aa86826"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/combustion_engine.json"
+hash = "e997d2cca43e64e5bce7284c3d8f59987ea48e2c9e3c5b6164f264af42255b28"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/electrolysis_machine.json"
+hash = "d84c96d94dfa8cac927a503a26748f10b919dff88c98c620461a8aaaa99ee55a"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/empty_blaze_burner.json"
+hash = "46ee8b27c7667e7790d1db8786ea65463a528cf845394050327fb9fb423c2a13"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/interplanetary_navigator.json"
+hash = "27196068cbfcf9c6cb1ae6e39fe65843a0a8e04530a6c5b5dd9bdc3fa6c0a942"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/gated/solar_panel.json"
+hash = "3e7e2618bb03b61a0f2eb238869b08b267ba84b7f547a7ea638ffbd1ec89fdc9"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/aeronautical_science_pack.json"
+hash = "8ecf3b8cb69824034f329553e8d42115d69e60c29fb45fbc3ba0c9684862ab74"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/chemical_science_pack.json"
+hash = "2fe8a2c30761511c477ef2218d89d955f29b318ab21d423eb9d2e433b7e1c99e"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/industrial_science_pack.json"
+hash = "0e306045c67ad4a1b8bd3c634406b76bd488c75efe44832be793fae993330c8e"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/kinetic_science_pack.json"
+hash = "20893737a0709d5cb459a1a8b03dbce6a449325822696eb15965b38127d3317a"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/logistic_science_pack.json"
+hash = "6c76fbaf724a1c0eb7ebfe6afd645cff7089febbcc1959d0da2016b6a42085b3"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/lunar_science_pack.json"
+hash = "5c12100136ef59f01aa8d895f1c3459638a2691f2ca160e7f44e9a6c996aa811"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/martian_science_pack.json"
+hash = "db6792f01d3fe50b502d91e976e7be7e206ff277182a2252adbc867d7b4f07e5"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/mercurian_science_pack.json"
+hash = "d133c10ba0ae5e90e61aa7abe80c598fd093fbc63f9a6f65a60a90818d26480f"
+
+[[files]]
+file = "kubejs/data/stellar/recipe/science/venusian_science_pack.json"
+hash = "9eb99811c7857a3042a6c3ce296c43d8d56422f464d83cd96109fdc19b460a37"
+
+[[files]]
+file = "kubejs/data/stellar/tags/item/earth_branch_packs.json"
+hash = "f6782c1703e96dde01eea349c7b618aad8f066a30ad4c1b48a3fa505d1bd3b21"
+
+[[files]]
+file = "kubejs/server_scripts/gating.js"
+hash = "25d63f21dbd5882c76653853d9040b5397664f2d263169367c8e02a8f05d14cc"
+
+[[files]]
+file = "kubejs/server_scripts/orbital_crystal.js"
+hash = "9286b463c63f0d9de4b0024548e0a71f7a40b43dc2c2403ab5be9882f46d9e3f"
+
+[[files]]
+file = "kubejs/server_scripts/planet_weather.js"
+hash = "64f15ccadf63d559cb489156328ae7ddd722adfe49cc4a532e80b75fce2730fc"
+
+[[files]]
+file = "kubejs/server_scripts/pollution.js"
+hash = "e792f48ed4f1fcbef2045f82e3375a56bc922cd294ff45d92e29c1c90627bf44"
+
+[[files]]
+file = "kubejs/server_scripts/starter_kit.js"
+hash = "cddf1e8f7e635e9d75a62ec21f1e28eaa0ccfbfe208a1131bbe11f0d2ae85132"
+
+[[files]]
+file = "kubejs/startup_scripts/items.js"
+hash = "9c781965d976755850f997c9c4296e26d969f957a93f56d0e5da806230f1af6d"
+
+[[files]]
+file = "mods/ae2.pw.toml"
+hash = "33cba314fd32e1988b830891e82d1bd5ef6eb50537e3c135cd086d83acd70227"
+metafile = true
+
+[[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "d1a627f92c82b82192cd9a800c84a98c9a878cc5bc9d81399758eef7760501ce"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "ada55861d7fa467e497d6b7b49f65f9b317a1b75d16c02dbb7ae8f49abec94d1"
+metafile = true
+
+[[files]]
+file = "mods/better-advanced-tooltips.pw.toml"
+hash = "b3f9c79c8e0d46e5eef2ede65943afbb7205556af7bbdd729a49978444e7c7cd"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics.pw.toml"
+hash = "5a23ccd7ab5283a58121bf46a926c8b8cde67a62c3cc93dc60f42e8975aa599c"
+metafile = true
+
+[[files]]
+file = "mods/create-aerostar.pw.toml"
+hash = "f66369ff277a0bebe37a64afbed24533b9872ada322b5138f4b26ac9bd454d35"
+metafile = true
+
+[[files]]
+file = "mods/create-tfmg.pw.toml"
+hash = "1da3df275025d8be6cc114dc1663821b01fd2a6cb46cc9e1ba63682b30fa27c8"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "b206139f48c58f9a9fd41e01382145d1594274f6fb905777b35eb97d1f89e106"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "5116c98c11b0bd42380b92b91422752349d75214c5ef9d7510d10a44e6aa6934"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "10e337705f0a14505879759cd70bb2d57abcaba05b546002c06bc3ddaa3cffcc"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "2362fbc2f39ac80c8c5c6f62ab08a45f016bc83e4d90f5e2e1c068bab18e1a13"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "31e3c9cc33ca9424a5cef65fa41d365272f7285cef3503442ee18feacebc4c78"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "a137eb5b52a63005006604d7c5facb1fb330945ac75c894ca5810d6a575b26bd"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "a0d7eb5b17e1df17d5a1f023acc6ba820484a0c3a5ea1eaec72d2dd46662610f"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "11ed19f7e2dcd57270b9dc9924a1f19dbbd09b2852b3f73eb9c722d6aeb33bbc"
+metafile = true
+
+[[files]]
+file = "mods/guideme.pw.toml"
+hash = "a644d332b1f7eeb0fdaae1344738f8f316b1fdbfa8cc7529615d433ab29454d2"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "728437efb384a83676a3c7d5dfa3719cbe31d4024301efab643a25c6917a0d53"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "6a28a5bb9e7271b04dcc7609162a786137e707c76b18304ac11eb8b67ecfa9ae"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "44b9c75ad123cca1396609b7905e1e2e49f7e5de07f37acda785644053e148c3"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "2806f6d75a1ecf1af4a8495b885616dfa2b8894432e4b19a732dab168312b6d4"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "43f4a2089c41f7c62da2968afd0da78943f9c836486431c03d49e0eb7d8b3720"
+metafile = true
+
+[[files]]
+file = "mods/mezzconfig.pw.toml"
+hash = "e077ace77457a6b0e49875ffcef508c97b3de15b7432602d03b5921edffd35b9"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "efc4c4d004cc8810e1fc8a60133f5a97f9e07e57c5c89286d64c988e848912a2"
+metafile = true
+
+[[files]]
+file = "mods/northstar-redux.pw.toml"
+hash = "750d28d24b805e8f54a25a7c89c0de45a6b336b217ca7a59f369bbceaa00e2b4"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "178dab4d4ae6e216d91db17a7aa698f6848bd7fe3f129bbde962ef140c2ba870"
+metafile = true
+
+[[files]]
+file = "mods/sable.pw.toml"
+hash = "76286d007113ef3ef83530149cece448ad52fcc2b1db24c7315c6391f37b2034"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "f880ba6592405b7fbf2c040c2a96e45d80c366976367a86d2814dcf24ead76ef"
+metafile = true
+
+[[files]]
+file = "mods/sound-physics-aeronautics.pw.toml"
+hash = "bc8b9cb75b0d7e545298d0bf57b278ab13feea4ab29fd70c736966e07eba5ebd"
+metafile = true
+
+[[files]]
+file = "mods/tectonic.pw.toml"
+hash = "34fcc30f95d2942bfaf88a0b06b0336f116cfa7451a001dcbad548f955446fd8"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "512c88dfc1b4c5fba914baaf57f39466d1cafa96ca9c67d6fa2cc2e1a9bd5b49"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "790610aaee7ed66fc75b6760dfc6d21c7444fdd34a6b24249fdbda186bdaed51"
+metafile = true

@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/iron"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:aeronautical_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_aeronautical_science_pack"
+        },
+        {
+          "item": "simulated:gyroscopic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_aeronautical_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_aeronautical_science_pack"
+        },
+        {
+          "item": "aeronautics:andesite_propeller"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_aeronautical_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_aeronautical_science_pack"
+        },
+        {
+          "item": "aeronautics:white_envelope"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_aeronautical_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_aeronautical_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_aeronautical_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_aeronautical_science_pack"
+  }
+}

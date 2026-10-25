@@ -1,0 +1,79 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tfmg:cast_iron_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:industrial_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_industrial_science_pack"
+        },
+        {
+          "item": "tfmg:steel_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_industrial_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_industrial_science_pack"
+        },
+        {
+          "item": "tfmg:plastic_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_industrial_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_industrial_science_pack"
+        },
+        {
+          "item": "tfmg:coal_coke"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_industrial_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_industrial_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_industrial_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_industrial_science_pack"
+  }
+}

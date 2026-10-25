@@ -1,0 +1,13 @@
+name = "Stellar Foundry"
+author = "Peter"
+version = "0.4.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "92a2f8dad3e0765e8488ba6e06b65fb316eb4ce5f7a6c9c9eb8bf7131b34569a"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.264"

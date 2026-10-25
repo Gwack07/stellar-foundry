@@ -1,0 +1,283 @@
+{
+	id: "2AA1EE3A57374F83"
+	group: ""
+	order_index: 3
+	filename: "moon"
+	title: "4. Lunar Outpost"
+	subtitle: [
+		"Sapphire, titanium and the way out"
+	]
+	icon: {
+		id: "northstar:polished_lunar_sapphire"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "8D4183E44823821E"
+			title: "Lunar Sapphire"
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"Sapphire geodes only grow on the Moon. Crush the clusters, then polish the shards with sandpaper."
+			]
+			dependencies: [
+				"2055755576D83E08"
+			]
+			tasks: [
+				{
+					id: "D5DE04341F41F1AB"
+					type: "item"
+					item: {
+						id: "northstar:lunar_sapphire_shard"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "11548AA65CED3CB9"
+					type: "item"
+					item: {
+						id: "northstar:polished_lunar_sapphire"
+						count: 1
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "E1367EBCDEB56EFC"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "B53290D6384A8C00"
+			title: "Regolith"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Moon sand. Also a slow source of liquid carbon."
+			]
+			dependencies: [
+				"2055755576D83E08"
+			]
+			tasks: [
+				{
+					id: "39919DBF86F28EF2"
+					type: "item"
+					item: {
+						id: "northstar:moon_sand"
+						count: 1
+					}
+					count: 32L
+				}
+			]
+			rewards: [
+				{
+					id: "433157F13AD16857"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "17A6BAC0CEA90449"
+			title: "Titanium Ore"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"Skipped the Chemical branch? The Moon has &etitanium ore&r. Mine it instead of building a chemical plant."
+			]
+			dependencies: [
+				"2055755576D83E08"
+			]
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "AB7C8BA218085FB8"
+					type: "item"
+					item: {
+						id: "northstar:raw_titanium_ore"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "2A2614AA9C4E0B68"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "1C3972AF61BFF216"
+			title: "Dimensional Drive"
+			x: 4.0d
+			y: -6.0d
+			description: [
+				"Lunar sapphire unlocks AeroStar's &6Dimensional Drive&r. Put one on any Create Aeronautics ship and it becomes a spaceship."
+				"Insert a star map (an empty slot means Earth orbit), climb past the required altitude shown on the drive, and the ship jumps, crew included."
+				"Remember: no air in space. Propellers die above the atmosphere and on airless worlds, so use levitite for lift there."
+			]
+			dependencies: [
+				"8D4183E44823821E"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "12891C9A77EBF3DF"
+					type: "item"
+					item: {
+						id: "aerostarcomp:dimensional_drive"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "BB37EB795D50672B"
+					type: "xp"
+					xp: 400
+				}
+			]
+		}
+		{
+			id: "C828D99DD117F7E7"
+			title: "Orbital Physics Assembler"
+			x: 8.0d
+			y: -6.0d
+			description: [
+				"Optional: assembles and disassembles physics structures in mid-air. Build space stations that you can dock to or turn into ships."
+			]
+			dependencies: [
+				"1C3972AF61BFF216"
+			]
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "29437EC780932E91"
+					type: "item"
+					item: {
+						id: "aerostarcomp:orbital_physics_assembler"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "31796379C9140B9E"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "148A9F670A781D40"
+			title: "Lunar Science"
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"Sequenced assembly on a titanium sheet: polished sapphire, vacuum crystal, moon sand, press."
+				"Materials from the Moon &oand&r orbit, so you need a supply chain."
+			]
+			dependencies: [
+				"8D4183E44823821E"
+				"B53290D6384A8C00"
+				"BC16869BD77EFFA8"
+			]
+			tasks: [
+				{
+					id: "A9A9DD16E6285FBD"
+					type: "item"
+					item: {
+						id: "kubejs:lunar_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "CA3D33CF6B71A448"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "4F01AD4A5CA5F671"
+			title: "Lunar Industry"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"A full stack. Lunar science unlocks the &6Interplanetary Navigator&r."
+			]
+			dependencies: [
+				"148A9F670A781D40"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "F08D4C736B071B1B"
+					type: "item"
+					item: {
+						id: "kubejs:lunar_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "7141CD26EDE70ADC"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			id: "D191D9C1046CFAFF"
+			title: "Interplanetary Navigator"
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"Install it on your rocket or your Dimensional Drive ship to travel to other planets. The Moon doesn't need one."
+				"Mars, Venus and Mercury are all open now, in &eany order&r."
+			]
+			dependencies: [
+				"4F01AD4A5CA5F671"
+			]
+			tasks: [
+				{
+					id: "61B60516A61A6187"
+					type: "item"
+					item: {
+						id: "northstar:interplanetary_navigator"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "AFFADB7EA3C5BA3D"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [ ]
+}

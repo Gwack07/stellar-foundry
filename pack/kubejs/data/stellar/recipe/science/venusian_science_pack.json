@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "northstar:titanium_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "kubejs:venusian_science_pack",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_venusian_science_pack"
+        },
+        {
+          "type": "neoforge:tag",
+          "amount": 250,
+          "tag": "c:sulfuric_acid"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_venusian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_venusian_science_pack"
+        },
+        {
+          "item": "northstar:calorian_log"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_venusian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_venusian_science_pack"
+        },
+        {
+          "item": "northstar:venus_stone"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_venusian_science_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_venusian_science_pack"
+        }
+      ],
+      "results": [
+        {
+          "id": "kubejs:incomplete_venusian_science_pack"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "kubejs:incomplete_venusian_science_pack"
+  }
+}

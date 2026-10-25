@@ -1,0 +1,131 @@
+{
+	id: "55FCE7BD66A640C1"
+	group: ""
+	order_index: 5
+	filename: "endgame"
+	title: "6. Warp"
+	subtitle: [
+		"The final build"
+	]
+	icon: {
+		id: "kubejs:warp_drive_core"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "8E18C779E14214D6"
+			title: "Interplanetary Supply Chain"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Complete science on &eany two&r planets. Shipping materials between worlds is the real puzzle: dedicated cargo ships, a station hub, or factories on site. Your call."
+			]
+			dependencies: [
+				"4E66E1C190ABF85D"
+				"54C43AA503B426DA"
+				"D24BC8E6F283FFA9"
+			]
+			min_required_dependencies: 2
+			tasks: [
+				{
+					id: "813B86ECFE0F579B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "3AC318FCBC8D77F9"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			id: "1C202391AB745B81"
+			title: "Warp Drive Core"
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"A 5x5 mechanical crafting recipe: Kinetic and Lunar packs, Earth-branch packs of any kind, packs from two different planets, titanium blocks and a nether star."
+				"Build it, and you've beaten Stellar Foundry. Congratulations, engineer."
+			]
+			dependencies: [
+				"8E18C779E14214D6"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "4E59FD5A769B47BE"
+					type: "item"
+					item: {
+						id: "kubejs:warp_drive_core"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "5920B9F0684FC7D2"
+					type: "xp"
+					xp: 5000
+				}
+			]
+		}
+		{
+			id: "DE13D7F24F8554BA"
+			title: "Grand Tour"
+			x: 4.0d
+			y: 4.0d
+			description: [
+				"Optional: produce science on all three planets."
+			]
+			dependencies: [
+				"8E18C779E14214D6"
+			]
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "143C306E0335B353"
+					type: "item"
+					item: {
+						id: "kubejs:martian_science_pack"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "C13C668F01A997FC"
+					type: "item"
+					item: {
+						id: "kubejs:venusian_science_pack"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "8952EB2729983308"
+					type: "item"
+					item: {
+						id: "kubejs:mercurian_science_pack"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "471660519B7724EF"
+					type: "xp"
+					xp: 2000
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [ ]
+}

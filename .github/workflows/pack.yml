@@ -1,0 +1,84 @@
+name: Pack checks
+
+on:
+  push:
+    paths: ["pack/**", "tools/**", ".github/workflows/pack.yml"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  offline-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pillow==12.3.0
+      - name: Validate IDs, JSON, SNBT, scripts, index
+        run: tools/check.sh
+      - name: Generator output matches committed pack
+        run: |
+          python3 tools/build_pack.py
+          # PNG bytes (and so index hashes) can differ with the runner's zlib, so compare everything else
+          git diff --stat --exit-code -- pack ':!*.png' ':!pack/index.toml' ':!pack/pack.toml' || (echo "::error::pack/ is out of date - run python3 tools/build_pack.py and commit"; exit 1)
+
+  server-smoke-test:
+    needs: offline-checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NEOFORGE: "21.1.264"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "21" }
+      - name: Install NeoForge server
+        run: |
+          mkdir server && cd server
+          curl -fsSL -o installer.jar "https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE}/neoforge-${NEOFORGE}-installer.jar"
+          java -jar installer.jar --installServer > install.log 2>&1 || (tail -50 install.log; exit 1)
+          echo "eula=true" > eula.txt
+          echo "-Xmx6G" > user_jvm_args.txt
+          printf "online-mode=false\nspawn-protection=0\n" > server.properties
+      - name: Install pack (server side) with packwiz-installer
+        run: |
+          (cd pack && python3 -m http.server 8765 >/dev/null 2>&1 &) ; sleep 2
+          cd server
+          curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+          java -jar packwiz-installer-bootstrap.jar -g -s server http://localhost:8765/pack.toml
+          ls mods
+      - name: Boot server and wait for world load
+        run: |
+          cd server
+          mkfifo console
+          (sleep 100000 > console &)
+          ./run.sh nogui < console > console.log 2>&1 &
+          for i in $(seq 1 120); do
+            if grep -q "Done (" logs/latest.log 2>/dev/null; then echo "server started"; break; fi
+            if ! pgrep -f neoforge > /dev/null && [ $i -gt 10 ]; then echo "server exited"; break; fi
+            sleep 5
+          done
+          sleep 60   # let tick-based scripts run a few cycles
+          echo "stop" > console || true
+          sleep 20
+      - name: Check for errors
+        run: |
+          cd server
+          status=0
+          if ! grep -q "Done (" logs/latest.log; then echo "::error::Server never finished starting"; status=1; fi
+          if ls crash-reports/*.txt >/dev/null 2>&1; then echo "::error::Crash report written"; cat crash-reports/*.txt | head -80; status=1; fi
+          if grep -E "\[ERROR\]" logs/kubejs/server.log logs/kubejs/startup.log; then echo "::error::KubeJS reported errors"; status=1; fi
+          grep -E "Loaded [0-9]+/[0-9]+ KubeJS" logs/kubejs/*.log || true
+          grep -E "Added [0-9]+ recipes" logs/latest.log | tail -1 || true
+          if grep -E "with [1-9][0-9]* failed recipes" logs/latest.log; then echo "::error::Recipes failed to load"; status=1; fi
+          exit $status
+      - name: Upload server logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-logs
+          path: |
+            server/logs/
+            server/crash-reports/
+            server/console.log
+          if-no-files-found: ignore

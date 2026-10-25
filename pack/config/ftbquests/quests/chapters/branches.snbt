@@ -1,0 +1,904 @@
+{
+	id: "C50E22437F582CD3"
+	group: ""
+	order_index: 1
+	filename: "branches"
+	title: "2. Earth Branches"
+	subtitle: [
+		"Pick any two of four - in any order"
+	]
+	icon: {
+		id: "northstar:titanium_ingot"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "213DFD421E9763DE"
+			title: "Choose Your Specialisation"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Four industries, four science packs. Space travel (the &6Astronomy Table&r) needs packs from &eany two different&r branches."
+				""
+				"&aLogistic&r: brass, trains and storage networks."
+				"&9Chemical&r: Northstar's titanium chemistry."
+				"&eAeronautical&r: physics-based flying machines."
+				"&7Industrial&r: oil wells, refineries, steel and plastics (TFMG)."
+				""
+				"The rest are optional, but each has its own rewards."
+			]
+			dependencies: [
+				"30C8CA24F7A65661"
+			]
+			tasks: [
+				{
+					id: "5D138B2B20E534AE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A6D39C32B89C6166"
+					type: "xp"
+					xp: 25
+				}
+			]
+		}
+		{
+			id: "FDB87DC442541201"
+			title: "Brass"
+			x: 4.0d
+			y: -6.0d
+			description: [
+				"Heated mixing of copper and zinc."
+			]
+			dependencies: [
+				"213DFD421E9763DE"
+			]
+			tasks: [
+				{
+					id: "B17C293E2E39806E"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 32L
+				}
+			]
+			rewards: [
+				{
+					id: "69EB5605D9B35258"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "32A4C58868D0F722"
+			title: "Electron Tubes"
+			x: 8.0d
+			y: -8.0d
+			description: [
+				"Polished rose quartz plus an iron sheet."
+			]
+			dependencies: [
+				"FDB87DC442541201"
+			]
+			tasks: [
+				{
+					id: "C854DBB86AF3AD17"
+					type: "item"
+					item: {
+						id: "create:electron_tube"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "B2A074C0E64000CF"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "5F3CF2C3B2D92641"
+			title: "Robot Hands"
+			x: 8.0d
+			y: -4.0d
+			description: [
+				"Deployers place items onto items mid-assembly."
+			]
+			dependencies: [
+				"FDB87DC442541201"
+			]
+			tasks: [
+				{
+					id: "FC6B31B12D21D479"
+					type: "item"
+					item: {
+						id: "create:deployer"
+						count: 1
+					}
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "E71B8A9C670FC306"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "DFAF3B23B1E3D771"
+			title: "Logistic Science"
+			x: 12.0d
+			y: -6.0d
+			description: [
+				"Sequenced assembly on a golden sheet: electron tube, belt and brass, then press."
+			]
+			dependencies: [
+				"32A4C58868D0F722"
+				"5F3CF2C3B2D92641"
+			]
+			tasks: [
+				{
+					id: "F0C5F1EE207BC6B0"
+					type: "item"
+					item: {
+						id: "kubejs:logistic_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "3AD2C441F6E728F7"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "8ADBA521370BF7BE"
+			title: "Logistics Specialist"
+			x: 16.0d
+			y: -6.0d
+			description: [
+				"A full stack of Logistic science. This also unlocks the &6AE2 Controller&r: your logistics robots."
+			]
+			dependencies: [
+				"DFAF3B23B1E3D771"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "4AB6C83033C84B74"
+					type: "item"
+					item: {
+						id: "kubejs:logistic_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "5BC3827F10D764D5"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "7EFA7178A8956B13"
+			title: "ME Network"
+			x: 20.0d
+			y: -8.0d
+			description: [
+				"Optional: a full storage and autocrafting network."
+			]
+			dependencies: [
+				"8ADBA521370BF7BE"
+			]
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "8981D66846D65466"
+					type: "item"
+					item: {
+						id: "ae2:controller"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "BC52C0137EEB0593"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "52E3A8A890C4277F"
+			title: "Rutile"
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"Crush sand, or better, limestone, for rutile concentrate (titanium ore)."
+			]
+			dependencies: [
+				"213DFD421E9763DE"
+			]
+			tasks: [
+				{
+					id: "6E37D27EBDC6660D"
+					type: "item"
+					item: {
+						id: "northstar:rutile_concentrate"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "AAD524EB192238EC"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "77B396AC43556479"
+			title: "Salt of the Nether"
+			x: 4.0d
+			y: 3.0d
+			description: [
+				"Crush basalt for salt, then fill salt with lava to make a sodium catalyst."
+			]
+			dependencies: [
+				"213DFD421E9763DE"
+			]
+			tasks: [
+				{
+					id: "33F3D74ABCDF4261"
+					type: "item"
+					item: {
+						id: "northstar:salt"
+						count: 1
+					}
+					count: 8L
+				}
+				{
+					id: "64E3A757482715F4"
+					type: "item"
+					item: {
+						id: "northstar:sodium_catalyst"
+						count: 1
+					}
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "CCDC9B61B84050E5"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "EB5CED5C303B6022"
+			title: "Titanium"
+			x: 8.0d
+			y: 1.5d
+			description: [
+				"Superheated mixing: 3 rutile, sodium catalyst, zinc and liquid carbon (compact coal) make titanium tetrachloride."
+				"Then a sturdy sheet goes through lava, TiCl4 and water fills with presses in between."
+				"A proper chemical plant: plan your pipes."
+			]
+			dependencies: [
+				"52E3A8A890C4277F"
+				"77B396AC43556479"
+			]
+			tasks: [
+				{
+					id: "F1FCD5D2849C2817"
+					type: "item"
+					item: {
+						id: "northstar:titanium_ingot"
+						count: 1
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "354457AB7D0253EB"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "45F0252CA339810B"
+			title: "Chemical Science"
+			x: 12.0d
+			y: 1.5d
+			description: [
+				"Sequenced assembly on a titanium sheet: 250 mB liquid carbon, salt, press."
+			]
+			dependencies: [
+				"EB5CED5C303B6022"
+			]
+			tasks: [
+				{
+					id: "F5CC7EA4BC7F953D"
+					type: "item"
+					item: {
+						id: "kubejs:chemical_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "E18BE9C1F538C510"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "47A7D88827F6AFAD"
+			title: "Chemistry Specialist"
+			x: 16.0d
+			y: 1.5d
+			description: [
+				"A full stack of Chemical science."
+			]
+			dependencies: [
+				"45F0252CA339810B"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "E4795BEEF2CCB456"
+					type: "item"
+					item: {
+						id: "kubejs:chemical_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "8C2B1E66F362A1B5"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "18AB619285F3747C"
+			title: "Physics Assembler"
+			x: 4.0d
+			y: 8.0d
+			description: [
+				"Create Aeronautics turns any structure into a simulated, physics-driven vehicle."
+				"Build a frame, place a Physics Assembler, and give it a signal."
+			]
+			dependencies: [
+				"213DFD421E9763DE"
+			]
+			tasks: [
+				{
+					id: "66F7D6E05E4220B8"
+					type: "item"
+					item: {
+						id: "simulated:physics_assembler"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "45BAD40639E1A023"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "59EA73522787E122"
+			title: "Propellers"
+			x: 8.0d
+			y: 6.5d
+			description: [
+				"Propeller bearings and propellers push air. Thrust depends on &eair pressure&r, so they weaken with altitude and on thin-air planets."
+			]
+			dependencies: [
+				"18AB619285F3747C"
+			]
+			tasks: [
+				{
+					id: "2B419F583DA8FBB4"
+					type: "item"
+					item: {
+						id: "aeronautics:propeller_bearing"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "7BF094A901C6A75F"
+					type: "item"
+					item: {
+						id: "aeronautics:andesite_propeller"
+						count: 1
+					}
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "1EF833782C1A400F"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "589DA1D21613F8EA"
+			title: "Stable Flight"
+			x: 8.0d
+			y: 9.5d
+			description: [
+				"Gyroscopic mechanisms keep a craft level. Sequenced assembly with cogwheels, shafts and brass nuggets."
+			]
+			dependencies: [
+				"18AB619285F3747C"
+			]
+			tasks: [
+				{
+					id: "99ECB9E832E8610A"
+					type: "item"
+					item: {
+						id: "simulated:gyroscopic_mechanism"
+						count: 1
+					}
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "534427E11F1BD29C"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "87498225676931F8"
+			title: "First Flight"
+			x: 12.0d
+			y: 8.0d
+			description: [
+				"Build a craft that takes off, flies a lap and lands in one piece. Tick this when you have."
+			]
+			dependencies: [
+				"59EA73522787E122"
+				"589DA1D21613F8EA"
+			]
+			tasks: [
+				{
+					id: "4C5D8771F6D1D219"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "29337DF335B4AE5C"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "6D17005382293E35"
+			title: "Aeronautical Science"
+			x: 12.0d
+			y: 11.0d
+			description: [
+				"Sequenced assembly on an iron plate: gyroscopic mechanism, andesite propeller, white envelope, press."
+			]
+			dependencies: [
+				"59EA73522787E122"
+				"589DA1D21613F8EA"
+			]
+			tasks: [
+				{
+					id: "6BA54FD0304489DD"
+					type: "item"
+					item: {
+						id: "kubejs:aeronautical_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "136443526BE68E69"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "7C763D67C717BE84"
+			title: "Aviation Specialist"
+			x: 16.0d
+			y: 11.0d
+			description: [
+				"A full stack of Aeronautical science."
+			]
+			dependencies: [
+				"6D17005382293E35"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "585428ECE3E1FF85"
+					type: "item"
+					item: {
+						id: "kubejs:aeronautical_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "577DF74D42E84A05"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "E298E6A81B816140"
+			title: "Coke Ovens"
+			x: 4.0d
+			y: 16.0d
+			description: [
+				"TFMG's coke oven turns coal into coal coke, the fuel for real steelmaking."
+			]
+			dependencies: [
+				"213DFD421E9763DE"
+			]
+			tasks: [
+				{
+					id: "EB628CB6C5312F04"
+					type: "item"
+					item: {
+						id: "tfmg:coke_oven"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "47DC4886AB13DEF3"
+					type: "item"
+					item: {
+						id: "tfmg:coal_coke"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "1F56B44FB7977114"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "CCA35C4119F7FA3B"
+			title: "Prospecting"
+			x: 4.0d
+			y: 19.0d
+			description: [
+				"The Surface Scanner finds underground &8oil deposits&r. Find one and build a pumpjack on it."
+			]
+			dependencies: [
+				"213DFD421E9763DE"
+			]
+			tasks: [
+				{
+					id: "C24EF1622377C623"
+					type: "item"
+					item: {
+						id: "tfmg:surface_scanner"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "104E3223121C66C1"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "41019B7009211CDC"
+			title: "Black Gold"
+			x: 8.0d
+			y: 19.0d
+			description: [
+				"Pump crude oil. A pumpjack needs rotation and a deposit underneath."
+			]
+			dependencies: [
+				"CCA35C4119F7FA3B"
+			]
+			tasks: [
+				{
+					id: "94800D854787A6F5"
+					type: "item"
+					item: {
+						id: "tfmg:pumpjack_base"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "347A8D400D2EDB38"
+					type: "item"
+					item: {
+						id: "tfmg:crude_oil_bucket"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "84752954AD42EE04"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "82686833EB81B398"
+			title: "Refinery"
+			x: 12.0d
+			y: 19.0d
+			description: [
+				"A steel distillation tower splits crude into diesel, gasoline, kerosene, naphtha and more."
+				"&eKerosene and diesel are rocket fuels&r for Northstar."
+			]
+			dependencies: [
+				"41019B7009211CDC"
+			]
+			tasks: [
+				{
+					id: "32CD901FA2E277D7"
+					type: "item"
+					item: {
+						id: "tfmg:steel_distillation_controller"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "41768DE7C52032CC"
+					type: "item"
+					item: {
+						id: "tfmg:kerosene_bucket"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "C1C039400A9AAB9A"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "44D17823AC4C6CDD"
+			title: "Cast Iron and Steel"
+			x: 8.0d
+			y: 16.0d
+			description: [
+				"TFMG's blast furnace makes cast iron and steel."
+			]
+			dependencies: [
+				"E298E6A81B816140"
+			]
+			tasks: [
+				{
+					id: "52FD4A7AAE3DC3BA"
+					type: "item"
+					item: {
+						id: "tfmg:cast_iron_ingot"
+						count: 1
+					}
+					count: 16L
+				}
+				{
+					id: "688620BB45D6D5E5"
+					type: "item"
+					item: {
+						id: "tfmg:steel_ingot"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "81DF502B540A5602"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "A623098472F2BF38"
+			title: "Industrial Science"
+			x: 16.0d
+			y: 17.5d
+			description: [
+				"Sequenced assembly on a cast iron sheet: steel mechanism, plastic sheet, coal coke, press."
+			]
+			dependencies: [
+				"44D17823AC4C6CDD"
+				"82686833EB81B398"
+			]
+			tasks: [
+				{
+					id: "58D42A91CD111DEA"
+					type: "item"
+					item: {
+						id: "kubejs:industrial_science_pack"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "F88EBE05B8844B19"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "F2D8FF8A34E71B20"
+			title: "Industry Specialist"
+			x: 20.0d
+			y: 17.5d
+			description: [
+				"A full stack of Industrial science."
+			]
+			dependencies: [
+				"A623098472F2BF38"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "7934EEC5D703CEB2"
+					type: "item"
+					item: {
+						id: "kubejs:industrial_science_pack"
+						count: 1
+					}
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "884B2F67D9926155"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "B3A5FF14FFD603FD"
+			title: "Diesel Power"
+			x: 16.0d
+			y: 21.0d
+			description: [
+				"Optional: TFMG engines burn fuel for big rotational power. They pollute, too."
+			]
+			dependencies: [
+				"82686833EB81B398"
+			]
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "90661CEC40AF249A"
+					type: "item"
+					item: {
+						id: "tfmg:regular_engine"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "697A00F16FEEBD60"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "45E2C20ADFBF860E"
+			title: "Floating Rock"
+			x: 16.0d
+			y: 8.0d
+			description: [
+				"Levitite floats by itself instead of pushing air, so it's your lift source where there is no air (as far as the mod's docs show: test it before you rely on it)."
+			]
+			dependencies: [
+				"87498225676931F8"
+			]
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "49834D3ED62BDB35"
+					type: "item"
+					item: {
+						id: "aeronautics:levitite"
+						count: 1
+					}
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "6844583BE4845CA1"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [ ]
+}

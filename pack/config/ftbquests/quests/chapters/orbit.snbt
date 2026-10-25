@@ -1,0 +1,356 @@
+{
+	id: "B84E41A8DDCE8256"
+	group: ""
+	order_index: 2
+	filename: "orbit"
+	title: "3. Reaching Orbit"
+	subtitle: [
+		"Star maps, spaceships and the first station"
+	]
+	icon: {
+		id: "northstar:star_map"
+		count: 1
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "EC5E7ACF610F893D"
+			title: "Astronomy Table"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"The Astronomy Table turns telescope readings into &bstar maps&r, your navigation data."
+				"It needs science packs from &eany two different&r Earth branches. There are six recipes, one per pair; JEI shows them all."
+			]
+			dependencies: [
+				"8ADBA521370BF7BE"
+				"47A7D88827F6AFAD"
+				"7C763D67C717BE84"
+				"F2D8FF8A34E71B20"
+			]
+			min_required_dependencies: 2
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "2AABA8AB59A854D7"
+					type: "item"
+					item: {
+						id: "northstar:astronomy_table"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "8E0924153560A2A5"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "858C8EE2BD6D32EB"
+			title: "Look Up"
+			x: 4.0d
+			y: -3.0d
+			description: [
+				"Craft a telescope, put it under open sky and take &bastronomical readings&r with paper."
+			]
+			dependencies: [
+				"EC5E7ACF610F893D"
+			]
+			tasks: [
+				{
+					id: "1F2A2E49CC52CC1C"
+					type: "item"
+					item: {
+						id: "northstar:telescope"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "77DF310B504B955E"
+					type: "item"
+					item: {
+						id: "northstar:astronomical_reading"
+						count: 1
+					}
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "67C8191CAD570FAB"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "9ECEAC41440D3680"
+			title: "Chart the Moon"
+			x: 8.0d
+			y: -3.0d
+			description: [
+				"Combine readings at the Astronomy Table into a star map."
+			]
+			dependencies: [
+				"858C8EE2BD6D32EB"
+			]
+			tasks: [
+				{
+					id: "D9EC249880945442"
+					type: "item"
+					item: {
+						id: "northstar:star_map"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "E7A093C76BF0709D"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			id: "ABD809674E09F922"
+			title: "Suit Up"
+			x: 4.0d
+			y: 3.0d
+			description: [
+				"Space has no air. Northstar's iron space suit seals you in."
+				"An &6Atmospheric Concentrator&r pulls oxygen out of Earth's air, and an Oxygen Filler tops up your suit. Pipe it onto your ship too."
+				"For Venus later, Create's &6netherite diving gear&r is heat-proof."
+			]
+			dependencies: [
+				"EC5E7ACF610F893D"
+			]
+			tasks: [
+				{
+					id: "9F004F8C3EEF8063"
+					type: "item"
+					item: {
+						id: "northstar:iron_space_suit_helmet"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "60B74C92D3F2CAF1"
+					type: "item"
+					item: {
+						id: "northstar:iron_space_suit_chestpiece"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "DE6CA778C1D8F725"
+					type: "item"
+					item: {
+						id: "northstar:iron_space_suit_leggings"
+						count: 1
+					}
+					count: 1L
+				}
+				{
+					id: "CB5A51DDF3DEBE71"
+					type: "item"
+					item: {
+						id: "northstar:iron_space_suit_boots"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "DADD47139B2CD7E5"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			id: "31CDE0D2F14F4B85"
+			title: "Rocket Station"
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"Your first trip off Earth has to be a &6Northstar rocket&r. The Dimensional Drive for custom ships needs lunar sapphire, which only exists on the Moon."
+				""
+				"The Rocket Station assembles a rocket from the blocks you build around it: hull, jet engines, fuel tanks, seats, and the star map for your destination. Ponder (hold W over it) shows the details."
+			]
+			dependencies: [
+				"9ECEAC41440D3680"
+				"ABD809674E09F922"
+			]
+			tasks: [
+				{
+					id: "62C6369EC14F4C4D"
+					type: "item"
+					item: {
+						id: "northstar:rocket_station"
+						count: 1
+					}
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "5ED350CD9F5B147F"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "815B93B8A58413EA"
+			title: "Liftoff"
+			x: 14.0d
+			y: 0.0d
+			description: [
+				"Build, fuel and launch your rocket. Tick this when you're airborne."
+			]
+			dependencies: [
+				"31CDE0D2F14F4B85"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "A2738A0C9BDC3FEB"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E7C53F1DEC42852D"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "5EC593CFE0913646"
+			title: "Low Earth Orbit"
+			x: 16.0d
+			y: -3.0d
+			description: [
+				"Reach Earth orbit. Zero gravity: your ship floats, but you can still walk the deck."
+			]
+			dependencies: [
+				"815B93B8A58413EA"
+			]
+			tasks: [
+				{
+					id: "5477D8D92FA76922"
+					type: "dimension"
+					dimension: "northstar:earth_orbit"
+				}
+			]
+			rewards: [
+				{
+					id: "F97645289B36E845"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "EAC8291544801229"
+			title: "Space Station"
+			x: 20.0d
+			y: -3.0d
+			description: [
+				"Build a permanent station in orbit. FTB Chunks lets you force-load it so it keeps running while you're away."
+			]
+			dependencies: [
+				"5EC593CFE0913646"
+			]
+			tasks: [
+				{
+					id: "E3948B6416F9AB4A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F7A366EFF8772B0F"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			id: "BC16869BD77EFFA8"
+			title: "Orbital Crystallisation"
+			x: 20.0d
+			y: 0.0d
+			description: [
+				"Drop &dPolished Rose Quartz&r on a floor in Earth orbit. After 30 seconds in vacuum it becomes a &dVacuum Crystal&r."
+				"Automate it: a chute drops quartz onto a floor and a hopper below collects crystals."
+			]
+			dependencies: [
+				"5EC593CFE0913646"
+			]
+			tasks: [
+				{
+					id: "8C2A697A14467F72"
+					type: "item"
+					item: {
+						id: "kubejs:vacuum_crystal"
+						count: 1
+					}
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "AB5B78A2F09859D7"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			id: "2055755576D83E08"
+			title: "One Small Step"
+			x: 16.0d
+			y: 3.0d
+			description: [
+				"Point your rocket at the Moon star map and land."
+				"Moon gravity is about 1/6 of Earth's and there is &cno air&r: propellers and balloons do nothing here."
+			]
+			dependencies: [
+				"815B93B8A58413EA"
+			]
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "BDE4A42D572ACEAA"
+					type: "dimension"
+					dimension: "northstar:moon"
+				}
+			]
+			rewards: [
+				{
+					id: "63D72DFBA173705B"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [ ]
+}
