@@ -1,10 +1,10 @@
-filename = 'ftb-teams-neoforge-2101.1.11.jar'
 name = 'FTB Teams (NeoForge)'
+filename = 'ftb-teams-neoforge-2101.1.11.jar'
 side = 'both'
 
 [download]
-hash = '62b65f752d0326edd13244e58d5f2aec035da4e9'
 hash-format = 'sha1'
+hash = '62b65f752d0326edd13244e58d5f2aec035da4e9'
 mode = 'metadata:curseforge'
 
 [update.curseforge]
