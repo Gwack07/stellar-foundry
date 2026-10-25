@@ -45,8 +45,11 @@ jobs:
           (cd pack && python3 -m http.server 8765 >/dev/null 2>&1 &) ; sleep 2
           cd server
           curl -fsSL -o packwiz-installer-bootstrap.jar https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
-          java -jar packwiz-installer-bootstrap.jar -g -s server http://localhost:8765/pack.toml
-          ls mods
+          if ! java -jar packwiz-installer-bootstrap.jar -g -s server http://localhost:8765/pack.toml > pw.log 2>&1; then
+            echo "::error title=packwiz-installer failed::$(tail -40 pw.log | sed 's/%/%25/g' | sed ':a;N;$!ba;s/\n/%0A/g')"
+            exit 1
+          fi
+          tail -5 pw.log; ls mods
       - name: Boot server and wait for world load
         run: |
           cd server
@@ -66,9 +69,11 @@ jobs:
           cd server
           status=0
           if ! grep -q "Done (" logs/latest.log; then echo "::error::Server never finished starting"; status=1; fi
-          if ls crash-reports/*.txt >/dev/null 2>&1; then echo "::error::Crash report written"; cat crash-reports/*.txt | head -80; status=1; fi
-          if grep -E "\[ERROR\]" logs/kubejs/server.log logs/kubejs/startup.log; then echo "::error::KubeJS reported errors"; status=1; fi
-          grep -E "Loaded [0-9]+/[0-9]+ KubeJS" logs/kubejs/*.log || true
+          enc() { sed 's/%/%25/g' | sed ':a;N;$!ba;s/\n/%0A/g'; }
+          if ! grep -q "Done (" logs/latest.log; then echo "::error title=server log tail::$(tail -60 logs/latest.log 2>/dev/null | enc)"; fi
+          if ls crash-reports/*.txt >/dev/null 2>&1; then echo "::error title=Crash report::$(head -60 crash-reports/*.txt | enc)"; status=1; fi
+          if grep -E "\[ERROR\]" logs/kubejs/server.log logs/kubejs/startup.log; then echo "::error title=KubeJS errors::$(grep -hE "\[ERROR\]" logs/kubejs/*.log | head -30 | enc)"; status=1; fi
+          echo "::notice title=KubeJS::$(grep -hE "Loaded [0-9]+/[0-9]+ KubeJS" logs/kubejs/*.log | enc)"
           grep -E "Added [0-9]+ recipes" logs/latest.log | tail -1 || true
           if grep -E "with [1-9][0-9]* failed recipes" logs/latest.log; then echo "::error::Recipes failed to load"; status=1; fi
           exit $status
