@@ -14,6 +14,19 @@ ItemEvents.modifyTooltips(event => {
   event.add('kubejs:warp_drive_core', ['\u00a76The way home... or further out.'])
 })
 
+// Hide mid-assembly transitional items from the JEI item list (they still show inside recipes)
+RecipeViewerEvents.removeEntries('item', event => {
+  event.remove('kubejs:incomplete_kinetic_science_pack')
+  event.remove('kubejs:incomplete_logistic_science_pack')
+  event.remove('kubejs:incomplete_chemical_science_pack')
+  event.remove('kubejs:incomplete_aeronautical_science_pack')
+  event.remove('kubejs:incomplete_industrial_science_pack')
+  event.remove('kubejs:incomplete_lunar_science_pack')
+  event.remove('kubejs:incomplete_martian_science_pack')
+  event.remove('kubejs:incomplete_venusian_science_pack')
+  event.remove('kubejs:incomplete_mercurian_science_pack')
+})
+
 RecipeViewerEvents.addInformation('item', event => {
   event.add('kubejs:vacuum_crystal', [
     'Drop Polished Rose Quartz on a floor in Earth orbit.',

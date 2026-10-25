@@ -263,6 +263,11 @@ StartupEvents.registry('item', event => {{
   event.create('vacuum_crystal').maxStackSize(64).rarity('rare')
   event.create('warp_drive_core').maxStackSize(1).rarity('epic').fireResistant()
 }})
+
+// Transitional "incomplete" packs only exist mid-assembly: keep them out of the creative tab
+StartupEvents.modifyCreativeTab('kubejs:tab', event => {{
+  SCIENCE_PACKS.forEach(key => event.remove(`kubejs:incomplete_${{key}}_science_pack`))
+}})
 """)
 
 gated = ["create:empty_blaze_burner", "ae2:controller", "northstar:astronomy_table",
@@ -311,12 +316,18 @@ ORB_ORBITS.forEach(dim => {
 """)
 
 tips = "\n".join(f"  event.add('kubejs:{k}_science_pack', ['\\u00a77{b}'])" for k, _, _, b in PACKS)
+hide = "\n".join(f"  event.remove('kubejs:incomplete_{k}_science_pack')" for k, *_ in PACKS)
 write(os.path.join(KJ, "client_scripts", "tooltips.js"), f"""// Stellar Foundry - tooltips and recipe-viewer notes
 
 ItemEvents.modifyTooltips(event => {{
 {tips}
   event.add('kubejs:vacuum_crystal', ['\\u00a7dGrown in Earth orbit from polished rose quartz'])
   event.add('kubejs:warp_drive_core', ['\\u00a76The way home... or further out.'])
+}})
+
+// Hide mid-assembly transitional items from the JEI item list (they still show inside recipes)
+RecipeViewerEvents.removeEntries('item', event => {{
+{hide}
 }})
 
 RecipeViewerEvents.addInformation('item', event => {{

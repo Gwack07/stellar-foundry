@@ -21,3 +21,8 @@ StartupEvents.registry('item', event => {
   event.create('vacuum_crystal').maxStackSize(64).rarity('rare')
   event.create('warp_drive_core').maxStackSize(1).rarity('epic').fireResistant()
 })
+
+// Transitional "incomplete" packs only exist mid-assembly: keep them out of the creative tab
+StartupEvents.modifyCreativeTab('kubejs:tab', event => {
+  SCIENCE_PACKS.forEach(key => event.remove(`kubejs:incomplete_${key}_science_pack`))
+})

@@ -118,7 +118,7 @@ hash = "a77bdfb83a1c48bc349f27b27b167e64048107dec1aa62d85c403c8390d5b26b"
 
 [[files]]
 file = "kubejs/client_scripts/tooltips.js"
-hash = "c3e90398ffe7fb3c12ee24883e29a27b8f77a6d63e098e8f8cd26370a05ff10b"
+hash = "8edad34e9204584abe6a5c44c15ee25a3173aa312fe9bbb3f92f302a410383a5"
 
 [[files]]
 file = "kubejs/data/stellar/recipe/endgame/warp_drive_core_martian_mercurian.json"
@@ -242,7 +242,7 @@ hash = "cddf1e8f7e635e9d75a62ec21f1e28eaa0ccfbfe208a1131bbe11f0d2ae85132"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"
-hash = "9c781965d976755850f997c9c4296e26d969f957a93f56d0e5da806230f1af6d"
+hash = "0aea4dd14dbb98dde0c607f1403fa8917ee8f02876529af8babd6323f01fd5a8"
 
 [[files]]
 file = "mods/ae2.pw.toml"

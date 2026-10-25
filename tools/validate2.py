@@ -23,6 +23,7 @@ ns_src = open(f"{SRC}/northstar/src/main/java/com/lightning/northstar/content/No
 for m in re.finditer(r'\.(?:item|block)\("([a-z0-9_]+)"', ns_src):
     known.add("northstar:" + m.group(1))
 known |= {"tfmg:" + v for v in "cast_iron_sheet steel_mechanism plastic_sheet coal_coke coke_oven firebox blast_furnace_output regular_engine radial_engine large_engine simple_large_engine turbine_engine steel_distillation_controller pumpjack_base surface_scanner crude_oil_bucket diesel_bucket kerosene_bucket steel_ingot cast_iron_ingot".split()}
+known |= {"kubejs:tab"}  # KubeJS creative tab (item/creativetab/KubeJSCreativeTabs.java)
 known |= {"minecraft:slowness", "minecraft:darkness", "minecraft:poison", "minecraft:overworld"}
 known |= {"ftbquests:book", "minecraft:bread", "minecraft:furnace", "minecraft:blast_furnace", "minecraft:smoker", "minecraft:husk", "minecraft:spider", "minecraft:vindicator", "minecraft:air", "minecraft:water"}
 known |= {"aerostarcomp:dimensional_drive", "aerostarcomp:orbital_physics_assembler"}
